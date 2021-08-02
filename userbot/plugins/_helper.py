@@ -4,7 +4,7 @@ from telethon import functions
 from userbot import ALIVE_NAME, CMD_LIST
 from userbot.utils import admin_cmd
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "godhacker"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Ιтz мє ¢ℓαєу"
 
 
 @command(pattern="^.help ?(.*)")
@@ -35,7 +35,7 @@ async def cmd_list(event):
                         out_file,
                         force_document=True,
                         allow_cache=False,
-                        caption="**COMMANDS**",
+                        caption="**ℂ𝕆𝕄𝕄𝔸ℕ𝔻𝕊**",
                         reply_to=reply_to_id,
                     )
                     await event.delete()
@@ -51,8 +51,8 @@ async def cmd_list(event):
             else:
                 await event.edit(input_str + " is not a valid plugin!")
         else:
-            help_string = f"""Userbot Helper.. Provided by @Godhackerzuserbot For {DEFAULTUSER}\n
-`Userbot Helper to reveal all the commands`\n__Do .help plugin_name for commands"""
+            help_string = f"""👩‍💻υѕєявσт-нєℓρєя.. ρяσνι∂є∂ ƒσя - **{DEFAULTUSER}**\n
+`Userbot Helper to reveal all the commands`\n🔖𝗗𝗼 .help plugin_name ƒσя 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦"""
             results = await bot.inline_query(  
                 tgbotusername, help_string
             )
