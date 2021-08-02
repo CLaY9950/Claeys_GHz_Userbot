@@ -1,4 +1,4 @@
-"""Profile Updation Commands
+"""ρяσƒιℓє υρ∂αтιση ¢σммαη∂ѕ:
 .pbio <Bio>
 .pname <Name>
 .ppic"""
@@ -17,7 +17,7 @@ async def _(event):
         await borg(functions.account.UpdateProfileRequest(  # pylint:disable=E0602
             about=bio
         ))
-        await event.edit("Succesfully changed master's profile bio! Check ☑Now Master!© @Godhackerzuserbot")
+        await event.edit("𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟𝗟𝗬 ¢нαηgє∂ υя 𝐁𝐈𝐎 ¢ℓαєу! ¢нє¢к ☑ησω мαѕтєя!\n\n © 🇦​🇸​🇸​​​​​🇮​🇸​🇹​🇦​🇳​🇹 ᵒᶠ ᶜˡᵃᵉʸ"​)
     except Exception as e:  # pylint:disable=C0103,W0703
         await event.edit(str(e))
 
@@ -46,7 +46,7 @@ async def _(event):
     if event.fwd_from:
         return
     reply_message = await event.get_reply_message()
-    await event.edit("Downloading Profile Picture to my local ...")
+    await event.edit("∂σωиℓσα∂ιиg ρяσfιℓє ρι¢ тσ му ℓσ¢αℓ...")
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):  # pylint:disable=E0602
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)  # pylint:disable=E0602
     photo = None
@@ -68,7 +68,7 @@ async def _(event):
             except Exception as e:  # pylint:disable=C0103,W0703
                 await event.edit(str(e))
             else:
-                await event.edit("Master's profile picture was succesfully changed! Check Now Master! © @Godhackerzuserbot")
+                await event.edit("υя ρяσfιℓє ρι¢ ωαѕ ѕυ¢¢єѕѕfυℓℓу ¢нαиgє∂ !\n\n © 🇦​🇸​🇸​🇮​🇸​🇹​🇦​🇳​🇹 ᵒᶠ ᶜˡᵃᵉʸ​​​")
     try:
         os.remove(photo)
     except Exception as e:  # pylint:disable=C0103,W0703
