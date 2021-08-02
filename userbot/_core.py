@@ -17,7 +17,7 @@ from userbot.utils import edit_or_reply as eor
 
 DELETE_TIMEOUT = 8
 thumb_image_path = "./resources/1207066133.png"
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "GodhackerzUserbot"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ClaeyZ UserboT"
 
 @command(pattern="^.load", outgoing=True)
 async def install(event):
